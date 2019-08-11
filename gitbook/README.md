@@ -30,7 +30,20 @@ FarStructure是一套针对“大间隔”“有序”帧的简易三维重建�
 
 为方便与其他算法快速融合\(例如将本算法Vision Odometry融入到infiniTAM算法中\),本算法将数据结构与算法分离：本算法的所有的算法接口\(主要在algo和object文件夹下\)均不依赖本算法的数据结构\(主要在object文件夹下\)，即只要配置好环境依赖，所有算法接口可直接调用。
 
-* algo主要内容：核心流程算法 ![algo1](../.gitbook/assets/algos.jpg)
+* algo主要内容：核心流程算法
+
+ ![algo1](../.gitbook/assets/algos.jpg)
+
+
+
+| processImage | ExtractFeature | matchFeature | FilterMatches | EstimatePose | OptimizePose |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| cutImage | ORB | BFM | None | None | None |
+| ... | SIFT | flann | GMS | 3D3DSVD | sparse3D3D |
+|  | SURT | ... | RANSAC | 3D2DPnp | sparse3D2D |
+|  | ... |  | maxDis | 3D2DPnpRansac | dense3D3D |
+|  |  |  | ... | ... | ... |
+
 * tool主要内容：工具算法
 
 | math | cloud | image | match |
