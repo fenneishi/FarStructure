@@ -1,0 +1,515 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.2 object · FarStructure</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="齐龙">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../algo/" />
+    
+    
+    <link rel="prev" href="../VO/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../上手/">
+            
+                <a href="../../上手/">
+            
+                    
+                    2 上手
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../上手/环境.html">
+            
+                <a href="../../上手/环境.html">
+            
+                    
+                    2.1 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../上手/配置.html">
+            
+                <a href="../../上手/配置.html">
+            
+                    
+                    2.2 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../上手/编译.html">
+            
+                <a href="../../上手/编译.html">
+            
+                    
+                    2.3 编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../上手/运行.html">
+            
+                <a href="../../上手/运行.html">
+            
+                    
+                    2.4 运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../结构/">
+            
+                <a href="../../结构/">
+            
+                    
+                    3  结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    4 代码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../VO/">
+            
+                <a href="../VO/">
+            
+                    
+                    4.1 VO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    4.2 object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../algo/">
+            
+                <a href="../algo/">
+            
+                    
+                    4.3 algo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../tool/">
+            
+                <a href="../tool/">
+            
+                    
+                    4.4 tool
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../FAQ/">
+            
+                <a href="../../FAQ/">
+            
+                    
+                    5  FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../附录/">
+            
+                <a href="../../附录/">
+            
+                    
+                    6 附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >4.2 object</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="object">object</h1>
+<p>&#x6570;&#x636E;&#x7ED3;&#x6784;</p>
+<h3 id="camera">Camera</h3>
+<p>&#x7BA1;&#x7406;&#x76F8;&#x673A;&#x6570;&#x636E;</p>
+<ul>
+<li><p>colorM</p>
+<p>&#x5F69;&#x8272;&#x76F8;&#x673A;&#x5185;&#x53C2;</p>
+</li>
+<li><p>DepthM</p>
+<p>&#x6DF1;&#x5EA6;&#x76F8;&#x673A;&#x5185;&#x53C2;</p>
+</li>
+<li><p>d2c</p>
+<p>&#x76F8;&#x673A;&#x5916;&#x53C2;&#xFF1A;&#x6DF1;&#x5EA6;&#x76F8;&#x673A;&#x5230;&#x5F69;&#x8272;&#x76F8;&#x673A;&#x7684;&#x8F6C;&#x6362;&#x77E9;&#x9635;</p>
+</li>
+</ul>
+<h3 id="frame">Frame</h3>
+<p>&#x7BA1;&#x7406;&#x6BCF;&#x4E00;&#x5E27;&#x6570;&#x636E;</p>
+<ul>
+<li><p>color</p>
+<p>&#x5F69;&#x8272;&#x56FE;</p>
+</li>
+<li><p>depth</p>
+<p>&#x6DF1;&#x5EA6;&#x56FE;</p>
+</li>
+<li><p>regisColor</p>
+<p>&#x7ECF;&#x8FC7;processImage&#x6A21;&#x5757;&#x5904;&#x7406;&#x8FC7;&#x540E;&#xFF0C;&#x7528;&#x4E8E;&#x4F4D;&#x59FF;&#x4F30;&#x8BA1;&#x548C;&#x4F4D;&#x59FF;&#x4F18;&#x5316;&#x7684;&#x5F69;&#x8272;&#x56FE;</p>
+</li>
+<li><p>regisDepth</p>
+<p>&#x7ECF;&#x8FC7;processImage&#x6A21;&#x5757;&#x5904;&#x7406;&#x8FC7;&#x540E;&#xFF0C;&#x7528;&#x4E8E;&#x4F4D;&#x59FF;&#x4F30;&#x8BA1;&#x548C;&#x4F4D;&#x59FF;&#x4F18;&#x5316;&#x7684;&#x6DF1;&#x5EA6;&#x56FE;</p>
+</li>
+<li><p>realT</p>
+<p>&#x5F53;&#x524D;&#x5E27;&#x76F8;&#x5BF9;&#x4E0A;&#x4E00;&#x5E27;&#x7684;&#x771F;&#x5B9E;&#x8F6C;&#x6362;&#x77E9;&#x9635;&#xFF1A;&#x82E5;&#x5F53;&#x524D;&#x5E27;&#x662F;&#x7531;creatCurrFrame&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5219;&#x53EF;&#x5F97;&#x5230;&#x5177;&#x4F53;&#x7684;realT,&#x5426;&#x5219;&#x81EA;&#x52A8;&#x7F6E;&#x4E3A;&#x5355;&#x4F4D;&#x77E9;&#x9635;</p>
+</li>
+<li><p>realPose</p>
+<p>&#x5F53;&#x524D;&#x5E27;&#x771F;&#x5B9E;&#x4F4D;&#x59FF;&#xFF1A;&#x82E5;&#x5F53;&#x524D;&#x5E27;&#x662F;&#x7531;creatCurrFrame&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5219;&#x53EF;&#x5F97;&#x5230;&#x5177;&#x4F53;&#x7684;realPose,&#x5426;&#x5219;&#x81EA;&#x52A8;&#x7F6E;&#x4E3A;&#x5355;&#x4F4D;&#x77E9;&#x9635;</p>
+</li>
+<li><p>estimatedT</p>
+<p>&#x5F53;&#x524D;&#x5E27;&#x76F8;&#x5BF9;&#x4E0A;&#x4E00;&#x5E27;&#x7684;&#x4F30;&#x8BA1;&#x8F6C;&#x6362;&#x77E9;&#x9635;&#xFF1A;&#x7531;EstimatePose&#x548C;OptimizePose&#x6A21;&#x5757;&#x8BA1;&#x7B97;&#x5F97;&#x51FA;.</p>
+</li>
+<li><p>estimatedPose</p>
+<p>&#x4F30;&#x8BA1;&#x4F4D;&#x59FF;&#xFF1A;&#x7531;EstimatePose&#x548C;OptimizePose&#x6A21;&#x5757;&#x8BA1;&#x7B97;&#x5F97;&#x51FA;.</p>
+</li>
+<li><p>readFrame()</p>
+<p>&#x91CD;&#x8981;&#x63A5;&#x53E3;&#xFF1A;&#x4ECE;&#x786C;&#x76D8;&#x4E2D;&#x8BFB;&#x53D6;1&#x5F20;&#x5F69;&#x8272;&#x56FE;&#x548C;1&#x5F20;&#x6DF1;&#x5EA6;&#x56FE;&#x4F5C;&#x4E3A;&#x65B0;&#x7684;&#x4E00;&#x5E27;</p>
+<ul>
+<li><p>preprocessColor()</p>
+<p>&#x8BFB;&#x53D6;&#x65F6;&#x9700;&#x8981;&#x5BF9;&#x5F69;&#x8272;&#x56FE;&#x505A;&#x4E00;&#x4E9B;&#x9884;&#x5904;&#x7406;&#xFF0C;&#x4F8B;&#x5982;&#x901A;&#x9053;&#x8F6C;&#x6362;</p>
+<ul>
+<li><p>regis:changeChannel ()</p>
+<p>&#x901A;&#x9053;&#x8F6C;&#x6362;</p>
+</li>
+</ul>
+</li>
+<li><p>preprocessDepth()</p>
+<p>&#x8BFB;&#x53D6;&#x65F6;&#x9700;&#x8981;&#x5BF9;&#x5F69;&#x8272;&#x56FE;&#x505A;&#x4E00;&#x4E9B;&#x9884;&#x5904;&#x7406;&#xFF0C;&#x4F8B;&#x5982;&#x6DF1;&#x5EA6;&#x56FE;&#x5BF9;&#x9F50;&#x5230;&#x5F69;&#x8272;&#x56FE;</p>
+<ul>
+<li><p>regis:depth2color()</p>
+<p>&#x6DF1;&#x5EA6;&#x56FE;&#x5BF9;&#x9F50;&#x5230;&#x5F69;&#x8272;&#x56FE;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>creatFrame()</p>
+<p>&#x91CD;&#x8981;&#x63A5;&#x53E3;&#xFF1A;&#x5229;&#x7528;previous frame&#x548C;&#x9884;&#x5148;&#x786E;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x751F;&#x6210;current frame</p>
+</li>
+</ul>
+<h3 id="feature">Feature</h3>
+<p>&#x7BA1;&#x7406;&#x6BCF;&#x4E00;&#x5E27;&#x7684;&#x7279;&#x5F81;&#x70B9;&#x6570;&#x636E;</p>
+<ul>
+<li><p>kps</p>
+<p>&#x7279;&#x5F81;&#x70B9;(std::vector<cv::keypoint>)</cv::keypoint></p>
+</li>
+<li><p>desp</p>
+<p>&#x63CF;&#x8FF0;&#x5B50;</p>
+</li>
+<li><p>keyPointsUV</p>
+<p>&#x7ECF;&#x8FC7;FilterMatches&#x6A21;&#x5757;&#x7B5B;&#x9009;&#x540E;&#x7684;&#x7279;&#x5F81;&#x70B9;&#x7684;2D&#x5F62;&#x5F0F;(std::vector&lt;(cv::Point2f&gt;)</p>
+</li>
+<li><p>keyPointsXYZ</p>
+<p>&#x7ECF;&#x8FC7;FilterMatches&#x6A21;&#x5757;&#x7B5B;&#x9009;&#x540E;&#x7684;&#x7279;&#x5F81;&#x70B9;&#x7279;&#x5F81;&#x70B9;3D&#x5F62;&#x5F0F;(std::vector<cv::point3f>)</cv::point3f></p>
+</li>
+</ul>
+<h3 id="match">Match</h3>
+<p>&#x7BA1;&#x7406;&#x76F8;&#x90BB;&#x4E24;&#x5E27;&#x7279;&#x5F81;&#x5339;&#x914D;&#x7ED3;&#x679C;</p>
+<ul>
+<li><p>matches</p>
+<p>&#x5339;&#x914D;&#x7ED3;&#x679C;(std::vector<cv::dmatch>)</cv::dmatch></p>
+</li>
+</ul>
+<h3 id="map">Map</h3>
+<p>&#x7BA1;&#x7406;&#x5168;&#x5C40;&#x70B9;&#x4E91;</p>
+<ul>
+<li><p>cloud</p>
+<p>&#x70B9;&#x4E91;</p>
+</li>
+<li><p>addPoints()</p>
+<p>&#x91CD;&#x8981;&#x63A5;&#x53E3;&#xFF1A;&#x5411;&#x70B9;&#x4E91;&#x4E2D;&#x6DFB;&#x52A0;&#x7279;&#x5F81;&#x70B9;</p>
+</li>
+</ul>
+<p><em>XMind: ZEN - Trial Version</em></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../VO/" class="navigation navigation-prev " aria-label="Previous page: 4.1 VO">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../algo/" class="navigation navigation-next " aria-label="Next page: 4.3 algo">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.2 object","level":"1.4.2","depth":2,"next":{"title":"4.3 algo","level":"1.4.3","depth":2,"path":"代码/algo/README.md","ref":"代码/algo/README.md","articles":[]},"previous":{"title":"4.1 VO","level":"1.4.1","depth":2,"path":"代码/VO/README.md","ref":"代码/VO/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"齐龙","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FarStructure","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"代码/object/README.md","mtime":"2019-08-11T02:53:46.168Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-11T07:32:16.455Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
