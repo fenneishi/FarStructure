@@ -26,8 +26,6 @@ FarStructure是一套针对“大间隔”“有序”帧的简易三维重建�
 
 具体拆分结构如下：（未来会根据需要继续添加新的模块或向每个模块添加更多算法） ![algo1](../.gitbook/assets/algo1.jpg)
 
-
-
 | processImage | ExtractFeature | matchFeature | FilterMatches | EstimatePose | OptimizePose |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | cutImage | ORB | BFM | None | None | None |
@@ -43,8 +41,6 @@ FarStructure是一套针对“大间隔”“有序”帧的简易三维重建�
 * algo主要内容：核心流程算法
 
  ![algo1](../.gitbook/assets/algos.jpg)
-
-
 
 | processImage | ExtractFeature | matchFeature | FilterMatches | EstimatePose | OptimizePose |
 | :---: | :---: | :---: | :---: | :---: | :---: |
