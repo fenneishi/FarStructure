@@ -26,6 +26,16 @@ FarStructure是一套针对“大间隔”“有序”帧的简易三维重建�
 
 具体拆分结构如下：（未来会根据需要继续添加新的模块或向每个模块添加更多算法） ![algo1](../.gitbook/assets/algo1.jpg)
 
+
+
+| processImage | ExtractFeature | matchFeature | FilterMatches | EstimatePose | OptimizePose |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| cutImage | ORB | BFM | None | None | None |
+| ... | SIFT | flann | GMS | 3D3DSVD | sparse3D3D |
+|  | SURT | ... | RANSAC | 3D2DPnp | sparse3D2D |
+|  | ... |  | maxDis | 3D2DPnpRansac | dense3D3D |
+|  |  |  | ... | ... | ... |
+
 ## 3. 数据与算法分离
 
 为方便与其他算法快速融合\(例如将本算法Vision Odometry融入到infiniTAM算法中\),本算法将数据结构与算法分离：本算法的所有的算法接口\(主要在algo和object文件夹下\)均不依赖本算法的数据结构\(主要在object文件夹下\)，即只要配置好环境依赖，所有算法接口可直接调用。
@@ -37,12 +47,8 @@ FarStructure是一套针对“大间隔”“有序”帧的简易三维重建�
 
 
 | processImage | ExtractFeature | matchFeature | FilterMatches | EstimatePose | OptimizePose |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| cutImage | ORB | BFM | None | None | None |
-| ... | SIFT | flann | GMS | 3D3DSVD | sparse3D3D |
-|  | SURT | ... | RANSAC | 3D2DPnp | sparse3D2D |
-|  | ... |  | maxDis | 3D2DPnpRansac | dense3D3D |
-|  |  |  | ... | ... | ... |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 图片预处理算法 | 特征点提取算法 | 特征匹配算法 | 匹配筛选算法 | 位姿估计算法 | 位姿优化算法 |
 
 * tool主要内容：工具算法
 
