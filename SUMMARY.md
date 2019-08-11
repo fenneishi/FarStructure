@@ -2,7 +2,6 @@
 
 * [FarStructure](README.md)
 * [FarStructure简介](gitbook/README.md)
-  * [Summary](gitbook/summary.md)
   * [运行](gitbook/shang-shou/README.md)
     * [配置](gitbook/shang-shou/pei-zhi.md)
     * [运行](gitbook/shang-shou/yun-hang.md)
