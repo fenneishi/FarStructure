@@ -2,17 +2,13 @@
 
 ## 配置文件路径
 
------
-
-[工程主目录]/file/parameters.txt
+\[工程主目录\]/file/parameters.txt
 
 ## 配置文件内容
 
-----
-
 * vo参数
 
-```
+```text
 #开始帧
 startIndex=0
 
@@ -27,14 +23,14 @@ voType=read
 
 * test参数
 
-```
+```text
 # mix测试结果保存位置
 mixDir=/Users/longqi/Desktop/project/data/goodScanSlam/FarStructure/tuyang1/mix/
 ```
 
 * object参数
 
-```
+```text
 # camera参数
     # 相机参数文件所在文件夹
   calib_find_dir=/Users/longqi/Desktop/project/data/goodScanSlam/FarStructure/tuyang1/camera/
@@ -44,14 +40,14 @@ mixDir=/Users/longqi/Desktop/project/data/goodScanSlam/FarStructure/tuyang1/mix/
     calib_find_extName=.txt
 ```
 
-```
+```text
     # 相机参数文件格式：内参是否是先rgb后depth
     Interior_rgbThenDepth=true
     # 相机参数文件格式：外参是否是depth2rgb
     Extrinsic_depth2rgb=false
 ```
 
-```
+```text
 # frame参数
     # readFream:读取图片时相关参数
         # rgb
@@ -107,7 +103,7 @@ mixDir=/Users/longqi/Desktop/project/data/goodScanSlam/FarStructure/tuyang1/mix/
 
 * step参数
 
-```
+```text
 # processImage参数
     # 是否进行图片剪切
     ifCut=true
@@ -156,7 +152,7 @@ mixDir=/Users/longqi/Desktop/project/data/goodScanSlam/FarStructure/tuyang1/mix/
 
 * 其他
 
-```
+```text
 # log参数
 # 参数文件保存文件夹路径
 log_save_dir=/Users/longqi/Desktop/project/data/goodScanSlam/FarStructure/tuyang1/log/

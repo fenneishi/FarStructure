@@ -32,15 +32,15 @@
 
 ## FilterMatches
 
-对匹配结果(match)进行过滤
+对匹配结果\(match\)进行过滤
 
 ## EstimatePose
 
-利用匹配结果(match)进行位姿估计
+利用匹配结果\(match\)进行位姿估计
 
 ## OptimizePose
 
-利用match和原始数据(彩色图&&深度图)优化位姿
+利用match和原始数据\(彩色图&&深度图\)优化位姿
 
 ## UpdateMap
 
@@ -61,3 +61,4 @@
 ## creatCurrFrame
 
 利用previous frame和预先确定的方法生成current frame
+

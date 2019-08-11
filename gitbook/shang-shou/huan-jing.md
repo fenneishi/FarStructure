@@ -2,7 +2,7 @@
 
 * opencv
   * 版本：stable 4.1.0
-* opencv_contrib
+* opencv\_contrib
   * 版本：stable 4.1.0
 * pcl
   * 版本： stable 1.9.1
